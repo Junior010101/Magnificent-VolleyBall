@@ -1,33 +1,53 @@
-# Gradle files
-.gradle/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+.bundles/
 build/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Expo
+.expo/
+.expo-shared/
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
+# React Native
+android/
+ios/
 *.iml
+*.hmap
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swns
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Metro
+.cache/
+*.swp
 
-# Android Profiling
-*.hprof
+# Testing
+coverage/
+jest/
+
+# Miscellaneous
+*.lock
+*.json.lock
+*.tsbuildinfo
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+.env.staging
+.DS_Store
+
+# OS generated files
+Thumbs.db
+Desktop.ini

@@ -1,3 +1,5 @@
+
+<img scr=./images/icon.png/>
 TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS
 
 

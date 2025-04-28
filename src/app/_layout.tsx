@@ -1,9 +1,11 @@
 import { Stack } from "expo-router";
-import './globals.css';
+import '../styles/globals.css';
 
 export default function RootLayout() {
   return (
-    <Stack screenOptions={{}}>
+    <Stack screenOptions={{
+      headerShown: false
+    }}>
       <Stack.Screen name="Start/Start" options={{ title: 'Inicio' }}/>
     </Stack>
   );

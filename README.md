@@ -1,4 +1,4 @@
-<img src=".src/assets/images/icon.png">
+<img src="src/assets/images/icon.png">
 
 
 TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS

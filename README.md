@@ -1,95 +1,70 @@
-<img src="src/assets/images/icon.png">
+# Magnificent VolleyBall 🏐
+<img width="500" src="https://github.com/Junior010101/Magnificent-VolleyBall/blob/main/src/assets/images/adaptive-icon.png?raw=true" alt="logo"/>
 
+![Node.js](https://img.shields.io/badge/Node.js-v18-green)
+[![Expo (React Native 0.76)](https://img.shields.io/badge/Expo%20-React%20Native%200.76-blue?style=flat)](https://docs.expo.dev/versions/v52.0.0/)
+![License](https://img.shields.io/badge/License-MIT-yellowgreen)
 
-TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS
+## 📚 Sumário
 
+- [Por que o nosso projeto é válido?](#-por-que-o-nosso-projeto-é-válido)
+- [Requisitos Funcionais](#-requisitos-funcionais)
+- [Arquitetura do Sistema](#arquitetura-do-sistema-)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+- [Visão Geral da Arquitetura](#-visão-geral-da-arquitetura)
+- [Desenvolvido por](#-desenvolvido-por)
 
-# MAGNIFICENT VOLLEY BALL
+## ⁉ Por que o nosso projeto é válido?
 
-## NOME DOS ALUNOS:
- Diego Gabriel, Gabriella Melo, Maria Clara, Maria Fernanda e Marcondes Paixão
+*Objetivo*: O aplicativo de voleibol é dividido em várias etapas com propósitos específicos. O saque inicia a jogada e tem o objetivo de dificultar a recepção adversária. A recepção visa controlar a bola para preparar o ataque. A preparação (levantamento) organiza a bola para que o atacante finalize com precisão. O ataque busca marcar ponto, enquanto o bloqueio e a defesa tentam impedir que o adversário pontue.
 
-## Orientador: Professor Doutor Sávio Silva de Almeida
-
-### PAULISTA 
-### 2024 
-### SUMÁRIO
-
-1.	INTRODUÇÃO
-2.	REQUISITOS FUNCIONAIS
-3.	ARQUITETURA DO SISTEMA
-4.	TECNOLOGIAS E FERRAMENTAS
-5.	DESIGN DE INTERFACE
-6.	CRONOGRAMA DE DESENVOLVIMENTO
-7.	CONSIDERAÇÕES FINAIS
-
-###   1. INTRODUÇÃO
-
-Objetivo: O aplicativo de voleibol é dividido em várias etapas com propósitos específicos. O saque inicia a jogada e tem o objetivo de dificultar a recepção adversária. A recepção visa controlar a bola para preparar o ataque. A preparação (levantamento) organiza a bola para que o atacante finalize com precisão. O ataque busca marcar ponto, enquanto o bloqueio e a defesa tentam impedir que o adversário pontue.
-
-Público-Alvo: Jovens e adultos.
-
-Tecnologias Utilizadas:
-* React Native
-* Tailwind
-* Figma
-* Git/Github
+*Público-Alvo*: Jovens e adultos.
         
-###   2. REQUISITOS FUNCIONAIS
+## 🛠️ Requisitos Funcionais
 
-Gestão de Tempo de Jogo: O aplicativo tem que constar o tempo de jogo, com a possibilidade de iniciar, pausar e reiniciar.
+- **Pontuação**: O aplicativo deve registrar os pontos de cada equipe.
+- **Exibição de Dados**: O placar deve ser visível e apresentar informações claras dos times e pontos.
+- **Alteração de Equipes**: O aplicativo deve solicitar os nomes das equipes antes de iniciar o jogo.
+- **Modo de Exibição**: Utilizar props para passar informações entre páginas.
 
-Pontuação: O aplicativo tem que registrar todos os pontos do vôlei de cada equipe.
+---
+# Arquitetura do Sistema 💻
 
-Controle de Faltas: O aplicativo tem que registrar todas as contagem do número de faltas por cada equipe.
+## 🛠️ Tecnologias Utilizadas:
+- Frontend: React Native, Gradient Colors, Tailwind, Figma, GPT e Lottie.
+- Backend: Nodejs, Expo APIs.
+- Bibliotecas e Frameworks: React, React native, Expo, Gradient Colors, NativeWind, Lottie, React-Native-Svg.
+- Versionamento: Git/Github.
 
-Exibição de Dados: O placar tem que ser visível, com todas as informações claras do tempo de jogo, e pontos.
+## 📦 Como Executar o Projeto
 
-Alteração de Equipes: O aplicativo precisa ter todos os dados de todas as equipes antes de iniciar o jogo.
+### Pré-requisitos
+- Node.js (v18 ou superior)
+- Gerenciador de pacotes: npm
 
-Modo de Exibição: Definição de como as informações serão exibidas.
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run start
+   ```
+## 👥 Visão Geral da Arquitetura:
+### *Participação e Colaboradores*: Descrição da formação dos módulos ou componentes principais do sistema, como:
 
-### 3. ARQUITETURA DO SISTEMA
-   
-Visão Geral da Arquitetura:
+- **Design do App**: Diego Gabriel, Marcondes, Maria Fernanda
+- **Gestão e Estrutura**: Gabriela, Maria Clara
+- **Criação de Ícones e Assets**: Diego Gabriel
+- **Desenvolvimento de Telas e Sistema**: Marcondes
 
-Componentes Principais: Descrição dos módulos ou componentes principais do sistema, como:
+---
+**Desenvolvido por:
+[Junior010101](https://github.com/Junior010101),
+[diego10gabriel](https://github.com/diego10gabriel),
+[claraamorim5](https://github.com/claraamorim5), 
+[mariiaa0](https://github.com/mariiaa0),
+[gabymelo0](https://github.com/gabymelo0)**
 
-- Tela de design(Maria Fernanda e gabriella)
-- Tela de controle do tempo(Marcondes)
-- Tela de controle de faltas(maria clara)
-- Tela de configuração das equipes(Diego Gabriel)
-
-Fluxo de Dados: Diagrama de fluxo de dados, mostrando como as informações serão gerenciadas e transmitidas entre os diferentes componentes.
-
-### 4. TECNOLOGIAS E FERRAMENTAS 
- 
-- Frontend: React Native, Gradient Colors, Tailwind, Figma e GPT.
-- Backend: Nodejs, Firebase.
-- Banco de Dados: Mysql.
-- API de Tempo: Não a contabilidade será de forma nativa.
-- Bibliotecas e Frameworks: React, React native, Expo, Gradient Colors, Tailwind.
-
-###   5. DESIGN DE INTERFACE
-   
-- Wireframes: Apresentação de wireframes ou protótipos das telas principais do aplicativo.
-- Fluxo de Navegação: Descrição de como o usuário navegará pelas telas do aplicativo.
-- Design Responsivo: Caso o aplicativo seja responsivo, explicação de como ele se ajustará a diferentes tamanhos de tela.
-- Logotipo: Apresentação da logo.
-
-###   6. CRONOGRAMA DE DESENVOLVIMENTO
-
-- Divisão de Tarefas: 
-- Tela de design foi feito em 7 horas (Maria Fernanda e gabriella)
-- Tela de controle do tempo foi feito em 5 horas (Marcondes)
-- Tela de controle de faltas foi feito em 2 horas (maria clara)
-- Tela de configuração das equipes foi feito em 7 horas (Diego Gabriel)
-
-Prazos: Cronograma com prazos do desenvolvimento, como planejamento, implementação, testes e entrega final.
-
-###   7. CONSIDERAÇÕES FINAIS 
-
-<p>Possíveis Melhorias Futuras: Sugestões para possíveis melhorias e funcionalidades, como a integração com uma plataforma de streaming de esportes ou a inclusão de estatísticas detalhadas.</p>
-
-<p>Conclusão: Resumo do que foi se foi falado na documentação e da importância do projeto para os alunos e para a turma.</p>
-
+**Professor: [savio-almeida](https://github.com/savio-almeida)**

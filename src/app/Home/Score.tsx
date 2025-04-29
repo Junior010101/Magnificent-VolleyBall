@@ -5,6 +5,7 @@ import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 export default function Home() {
   const [team1, setTeam1] = useState('');
   const [team2, setTeam2] = useState('');
+  const [winScore, setwinScore] = useState('');
   const router = useRouter();
 
   return (
@@ -28,10 +29,17 @@ export default function Home() {
         onChangeText={setTeam2}
         style={styles.input}
       />
+      <TextInput
+        placeholder="Pontuação de Vitoria"
+        keyboardType='numeric'
+        value={winScore}
+        onChangeText={setwinScore}
+        style={styles.input}
+      />
       <Button
         title="Começar"
-        onPress={() => router.push({ pathname: '../(tabs)/Score', params: { team1, team2 } })}
-        disabled={!team1 || !team2}
+        onPress={() => router.push({ pathname: '../(tabs)/Score', params: { team1, team2, winScore } })}
+        disabled={!team1 || !team2 || !winScore}
       />
     </View>
     </>

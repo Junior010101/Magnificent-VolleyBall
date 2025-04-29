@@ -5,6 +5,8 @@ import { Button } from "./button";
 
 const { width } = Dimensions.get('window');
 
+let value = 0;
+
 export const Header = (props: any) => {
     const [isOpen, setIsOpen] = useState(false);
     const [slideAnim] = useState(new Animated.Value(width));
@@ -46,7 +48,7 @@ export const Header = (props: any) => {
         <>
         <BlurView intensity={50} tint="light" className="w-full h-16 justify-start flex flex-row z-[3]">
             <View className="flex-row items-center h-full px-5 self-start">
-                {props.logo? null : <Image className="w-12 h-12 rounded-lg" source={require('../assets/images/icon.png')} />};
+                <Image style={{opacity: props.logo? value : value + 1}} className="w-12 h-12 rounded-lg" source={require('../assets/images/icon.png')} />
             </View>
             <TouchableOpacity onPress={toggleSidebar} className="bg-trasparent w-10 h-16 justify-self-end justify-center ml-auto mr-6">
                 <Animated.View className="items-center h-2 bg-white rounded-xl"

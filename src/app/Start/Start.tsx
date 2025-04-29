@@ -6,16 +6,14 @@ import { Button } from '@/components/button';
 import { Icone } from '@/assets/svgs/icons';
 
 export default function App() {
-  // Criando uma referência para a animação de posição
   const buttonYPosition = useRef(new Animated.Value(-600)).current;
   const IconPosition = useRef(new Animated.ValueXY({x: -200, y: -1000})).current;
 
   useEffect(() => {
-    // Animação de entrada, fazendo o botão surgir de baixo para cima
     Animated.spring(buttonYPosition, {
-      toValue: 0, // A posição final é 0 (fixa no lugar)
-      friction: 5, // Define a "rigidez" da animação
-      useNativeDriver: true, // Usar a aceleração de hardware
+      toValue: 0,
+      friction: 5,
+      useNativeDriver: true,
     }).start();
     Animated.spring(IconPosition, {
       toValue: 0,
@@ -29,7 +27,7 @@ export default function App() {
     colors={['#FDC701', '#FF6200', '#FF6200']}
     >
       <Header/>
-      <Animated.View className='absolute mt-safe-offset-60 z-[1]'
+      <Animated.View className='z-[1] mt-auto -mb-10'
       style={[
         {transform: [
           {translateX: IconPosition.x },
@@ -39,10 +37,10 @@ export default function App() {
       >
         <Icone/>
       </Animated.View>
-      <Animated.View className="mt-auto z-0 bg-azul-200 w-full h-72 rounded-s-3xl justify-center items-center"
+      <Animated.View className="z-0 bg-azul-200 w-full h-72 rounded-s-3xl justify-center items-center"
         style={[
           {
-            transform: [{ translateY: buttonYPosition }], // Aplica a animação na posição Y
+            transform: [{ translateY: buttonYPosition }],
           },
         ]}
       >

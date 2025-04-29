@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Magnificent-VolleyBall",
+    "name": "Magnificent VolleyBall",
     "slug": "Magnificent-VolleyBall",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -41,9 +41,6 @@
     "extra": {
       "router": {
         "origin": false
-      },
-      "eas": {
-        "projectId": "be023382-76ac-4fe2-80bf-dce8655319b6"
       }
     }
   }

@@ -1,11 +1,30 @@
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Button } from 'react-native';
+import { useEffect, useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Button, Alert } from 'react-native';
 
 export default function Score() {
-  const { team1, team2 } = useLocalSearchParams();
+  const { team1, team2, winScore } = useLocalSearchParams();
   const [score1, setScore1] = useState(0);
   const [score2, setScore2] = useState(0);
+
+  useEffect(() => {
+    if(score1 == Number(winScore)) {
+      Alert.alert("Fim de jogo", "🥇Time 1 ganhou!", [
+        {
+          text: 'OK',
+          onPress: () => router.replace('../Home/Score'),
+        }
+      ]);
+    }
+    if (score2 == Number(winScore)) {
+      Alert.alert("Fim de jogo", "🥇Time 2 ganhou!", [
+        {
+          text: 'OK',
+          onPress: () => router.replace('../Home/Score'),
+        }
+      ]);
+    }
+  }, [score1, score2]);
 
   return (
     <>
@@ -25,10 +44,17 @@ export default function Score() {
       </View>
       <View style={styles.buttons}>
         <TouchableOpacity style={styles.button} onPress={() => setScore1(score1 + 1)}>
-          <Text style={styles.buttonText}>+1 {team1}</Text>
+          <Text style={styles.buttonText}>+1</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => setScore1(score1 > 0? score1 - 1 : score1)}>
+          <Text style={styles.buttonText}>-1</Text>
+        </TouchableOpacity>
+        <View className="w-[1px] h-full border border-white"></View>
         <TouchableOpacity style={styles.button} onPress={() => setScore2(score2 + 1)}>
-          <Text style={styles.buttonText}>+1 {team2}</Text>
+          <Text style={styles.buttonText}>+1</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => setScore2(score2 > 0? score2 - 1 : score2)}>
+          <Text style={styles.buttonText}>-1</Text>
         </TouchableOpacity>
       </View>
     </View>

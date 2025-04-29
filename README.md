@@ -8,12 +8,10 @@
 ## 📚 Sumário
 
 - [Por que o nosso projeto é válido?](#-por-que-o-nosso-projeto-é-válido)
-- [Requisitos Funcionais](#-requisitos-funcionais)
-- [Arquitetura do Sistema](#arquitetura-do-sistema-)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Requisitos Funcionais](#%EF%B8%8F-requisitos-funcionais)
+- [Tecnologias Utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
 - [Visão Geral da Arquitetura](#-visão-geral-da-arquitetura)
-- [Desenvolvido por](#-desenvolvido-por)
 
 ## ⁉ Por que o nosso projeto é válido?
 

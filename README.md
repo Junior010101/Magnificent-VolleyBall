@@ -1,9 +1,9 @@
 # Magnificent VolleyBall 🏐
 <img width="500" src="https://github.com/Junior010101/Magnificent-VolleyBall/blob/main/src/assets/images/adaptive-icon.png?raw=true" alt="logo"/>
 
-![Node.js](https://img.shields.io/badge/Node.js-v18-green)
+[![Node.js](https://img.shields.io/badge/Node.js-v18-green)](https://nodejs.org/pt/)
 [![Expo (React Native 0.76)](https://img.shields.io/badge/Expo%20-React%20Native%200.76-blue?style=flat)](https://docs.expo.dev/versions/v52.0.0/)
-![License](https://img.shields.io/badge/License-MIT-yellowgreen)
+[![License](https://img.shields.io/badge/License-MIT-yellowgreen)](https://pt.wikipedia.org/wiki/Licença_MIT)
 
 ## 📚 Sumário
 
